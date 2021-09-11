@@ -29,13 +29,28 @@ header a {
     border-radius: 4px;
 }
 
+header select {
+    margin-top: 35px;
+    margin-left: 900px;
+    padding: 5px 0px 5px 20px;
+    background: none;
+    color: white;
+    font-size: 14px;
+    border: white solid 1px;
+    border-radius: 3px;
+}
+
+header option {
+    background: gray;
+}
+
 header img {
     margin-top: 10px;
     margin-left: 20px;
 }
 
 main {
-    height: 700px;
+    height: 600px;
     background: url(assets/bg.jpg) center;
     background-size: cover;
     display: flex;
@@ -87,7 +102,20 @@ main p {
     border: none;
     color: white;
     font-size: 26px;
-    text-transform: uppercase;
+}
+
+.form-cta button:hover {
+    background-color: #ff1500;
+    cursor: pointer;
+}
+
+.form-cta button::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 19px;
+    margin-left: 13px;
+    background: url(assets/chevron.svg);
 }
 
 .gradient {
